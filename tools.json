@@ -1,0 +1,22 @@
+[
+  {
+    "name": "jp_fsa_unregistered_search",
+    "description": "Search the Japan Financial Services Agency's published list of unregistered financial-instruments business operators it has warned (無登録で金融商品取引業を行う者; domestic and overseas, since 2010, ~1,160 names): name or alias in Japanese or English, the business the warning concerned, the agency's note and when it was listed. Match is exact or partial after Unicode folding and corporate-form words are dropped. A hit is the agency's own row; the agency stresses it reflects the time of the warning, not necessarily the party's current activity. No hit means not on the list as published on `data_as_of`; it does not mean the party is registered (this is a warnings list, not the register of licensed firms). Example: name=\"Sakura Prime\".",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Company or person name in Japanese or English. At least 2 characters."
+        },
+        "limit": {
+          "type": "number",
+          "description": "Maximum matches returned (1-50, default 10); `total_matches` always gives the full count."
+        }
+      },
+      "required": [
+        "name"
+      ]
+    }
+  }
+]

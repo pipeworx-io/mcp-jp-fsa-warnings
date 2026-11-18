@@ -1,0 +1,33 @@
+{
+  "name": "@pipeworx/mcp-jp-fsa-warnings",
+  "version": "0.1.0",
+  "description": "jp-fsa-warnings -- the Financial Services Agency (金融庁) list of parties it or a Local Finance Bureau has warned for conducting financial-instruments business without registration (無登録業者). Keyless; read live per call from the publisher (isolate cache, one hour).",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "mcp-jp-fsa-warnings": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "jp-fsa-warnings"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pipeworx-io/mcp-jp-fsa-warnings.git"
+  },
+  "mcpName": "io.github.pipeworx-io/jp-fsa-warnings",
+  "pipeworx": {
+    "mode": "gateway",
+    "slug": "jp-fsa-warnings",
+    "gatewaySlug": "jp-fsa-warnings",
+    "sourceHash": "v1-77e256d04c6240517640029ef9c0896be835a07fa305a7e4067b34bb698fa22a",
+    "sourceCommit": "48ee615c2b1233ef1f4bac25e30b36e946ff8c80"
+  }
+}
